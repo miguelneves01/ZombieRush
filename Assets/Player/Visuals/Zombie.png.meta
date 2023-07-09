@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 577ac4065a5649946aec1ea60fa97b1f
+guid: d8a95b05c536cf444ba8fe4fc3cde0a8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 8
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -136,1366 +136,1114 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: L2_0
+      name: Zombie_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 184
-        width: 16
-        height: 16
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e18cf38d152d4d34c9953417d0d283c1
-      internalID: 358996486
+      spriteID: e0ed14824d4927849b8b2af0415ef39c
+      internalID: 1213514995
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: L2_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 184
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6572059992d697a47a06a617ba493665
-      internalID: 1276601751
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: L2_2
+      name: Zombie_1
       rect:
         serializedVersion: 2
         x: 32
-        y: 184
-        width: 16
-        height: 16
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e71a0a54e75c81849b894468d1146c31
-      internalID: -1934491888
+      spriteID: 13fa2bc473ab08042bf53f3d2850407a
+      internalID: 1764977586
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: L2_3
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 184
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9abd93743f03ee94492c275db2083394
-      internalID: -1560632103
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: L0_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 168
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5c9c33ff6c1ee4b48b6af5e399aad0e0
-      internalID: -1358744226
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: L0_5
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 168
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e1e259f762c2d1c42b43516278b54d30
-      internalID: 1499160045
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: L0_6
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 168
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7b6b9243903b2444988ebb8694aedf2e
-      internalID: -1485585154
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: L0_7
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 168
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b3c0c6f3ba427f6489a2fd395e2ace88
-      internalID: -974979767
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: L0_8
+      name: Zombie_2
       rect:
         serializedVersion: 2
         x: 64
-        y: 168
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c87ff054841a5324ea7ed66ee0f3c3c1
-      internalID: 1581728236
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tile_12
-      rect:
-        serializedVersion: 2
-        x: 89
         y: 160
-        width: 16
-        height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a609cc9fe81e8a3439af237df0482e75
-      internalID: 415917100
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: L0_9
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 152
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8dad11d4888f0454aa5d211025dfb077
-      internalID: 181200128
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: L0_10
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 152
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ce9b9b597d1149a468339870043af46d
-      internalID: -506776875
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: L0_11
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 152
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 02417811df9870f4ebf22299c8293658
-      internalID: 490830551
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: L0_12
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 152
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 16c90a27b94420c4ea03ca8c338bf908
-      internalID: 372570531
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tile_24
-      rect:
-        serializedVersion: 2
-        x: 135
-        y: 152
         width: 32
-        height: 42
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ffdf795f660adc84392f0b28e31872e9
-      internalID: -1620856796
+      spriteID: b7d71fff2ec04ae4b9fcbb2382abc38b
+      internalID: -1846927086
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: L0_13
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 136
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 942f6b0f288e1c248ac2003554c3bcbe
-      internalID: -1142930494
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: L0_14
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 136
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8c0cda41be3fcfb4b9f1b61c54cb0eff
-      internalID: 812976777
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: L0_15
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 136
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 99364893a3e6ae2418e35f40119754d7
-      internalID: 140755419
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: L0_16
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 136
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b10df9ecb04229845b9cf6051efb234a
-      internalID: -1327519524
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tile_32
-      rect:
-        serializedVersion: 2
-        x: 135
-        y: 136
-        width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4703fdfa8d47ab64787038905f8500c3
-      internalID: 284361338
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: L0_17
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 120
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c84ade936811c2c4b9126cd9ba10d1e5
-      internalID: -1581117026
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: L0_18
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 120
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2c7ffb04e500190499c457dd2682f818
-      internalID: -912175957
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tile_38
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 120
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 543e1628092c3d94ebe9123970e383da
-      internalID: 1938796928
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tile_39
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 104
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 00956bd324600c5439a84f6638957a33
-      internalID: -642725066
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tile_40
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 104
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8da4b5a5b8a042442b528b8613fb1aa5
-      internalID: -89051376
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tile_41
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 104
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f33e3124164e55f46b05b9ec793c123c
-      internalID: -758191109
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: L0_0
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 104
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c5b62fa071a992b4e9018ab9c2872de2
-      internalID: 121113153
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tile_47
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 104
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 85a3fe2b252510c469e2552bd0b83d1d
-      internalID: 1159747881
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tile_48
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 104
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e613337d0481e864d9193979e3c6e4d0
-      internalID: 1861117657
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tile_49
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 88
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4431fdefa9938c84aadd1d91da7eea67
-      internalID: 1148532001
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tile_50
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 88
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 11e15925a78f01543ad000afe51bdff7
-      internalID: 1307738790
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tile_51
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 88
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 37186c464e172eb419b96b790f9e0225
-      internalID: -480104258
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BASE
+      name: Zombie_3
       rect:
         serializedVersion: 2
         x: 96
-        y: 88
-        width: 16
-        height: 16
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15f2e0b929f6f014b9a170176125987b
-      internalID: -1876042514
+      spriteID: 453f6e9a261512542ba24edbba8a4ee8
+      internalID: 530439687
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_56
+      name: Zombie_4
       rect:
         serializedVersion: 2
-        x: 144
-        y: 88
-        width: 16
-        height: 16
+        x: 128
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e121a1bbf5125974890bb0908a581534
-      internalID: 481257553
+      spriteID: d0404421e4c46e94f8a1a68e063d9531
+      internalID: 145348292
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_57
+      name: Zombie_5
       rect:
         serializedVersion: 2
         x: 160
-        y: 88
-        width: 16
-        height: 16
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2294c598ecb5eb54097afe0ff51fff75
-      internalID: 559838395
+      spriteID: 389d46f8b06557f40955b007e14566cb
+      internalID: 1119482274
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_58
+      name: Zombie_6
       rect:
         serializedVersion: 2
-        x: 176
-        y: 88
-        width: 16
-        height: 16
+        x: 192
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db78a8e8571012a45aaf1a8f03e1d931
-      internalID: 2083477685
+      spriteID: 330232eb580e5f0419f756554ec97c6d
+      internalID: 589728731
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_59
+      name: Zombie_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20c7ee8e6a29c1f4b9f0758e37e97571
+      internalID: -940915496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_8
       rect:
         serializedVersion: 2
         x: 0
-        y: 72
-        width: 16
-        height: 16
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d61922fed18659b47b342349d69042b7
-      internalID: -2006115590
+      spriteID: 18b476f63e731df458d019c4a8ce015e
+      internalID: -1497783427
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_60
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 72
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a2d55afb11b54c54885bd0e9b033c625
-      internalID: 14784664
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tile_61
+      name: Zombie_9
       rect:
         serializedVersion: 2
         x: 32
-        y: 72
-        width: 16
-        height: 16
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 38bab11eddb02c3459a1eba77209789a
-      internalID: -1602134436
+      spriteID: 8b50104149f7022468fb006ddd2dda9f
+      internalID: 2048418511
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_66
+      name: Zombie_10
       rect:
         serializedVersion: 2
-        x: 144
-        y: 72
-        width: 16
-        height: 16
+        x: 64
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbf9998a67d3da4498ed5e25509c08f7
-      internalID: -1720484230
+      spriteID: 4542a74e2af2f81429f81a1dce8330b5
+      internalID: 1690309600
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_67
+      name: Zombie_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff35ac3c55b508e43a466c9396784272
+      internalID: 985157888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_12
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4320ec38d8644354083f5f1ddcb46363
+      internalID: -1703066788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_13
       rect:
         serializedVersion: 2
         x: 160
-        y: 72
-        width: 16
-        height: 16
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18fa0e3d655a6af4fbf46ca5d8e0d9ec
-      internalID: -1246029139
+      spriteID: cf6ec115160dc5944b4eab0bca13ce38
+      internalID: 1036570101
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_68
+      name: Zombie_14
       rect:
         serializedVersion: 2
-        x: 176
-        y: 72
-        width: 16
-        height: 16
+        x: 192
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a435599b676ccd04c85d617b08640ae3
-      internalID: -872390392
+      spriteID: 75b240a3ada88fa428d7d8d50367899e
+      internalID: -1498735165
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_69
+      name: Zombie_15
       rect:
         serializedVersion: 2
-        x: 8
-        y: 43
-        width: 16
-        height: 12
+        x: 0
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 091837ed827bf0548a21529b50a00420
-      internalID: 622056949
+      spriteID: 12978d743a8d68140b8f8cb1bbe0381f
+      internalID: 635350389
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_71
+      name: Zombie_16
       rect:
         serializedVersion: 2
-        x: 24
-        y: 43
-        width: 16
-        height: 12
+        x: 32
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96f6b9e5fb015f942b66bd11e9e2233a
-      internalID: -295299314
+      spriteID: 2d333521ef5a485448d23118dd1fe564
+      internalID: -1374168547
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_73
+      name: Zombie_17
       rect:
         serializedVersion: 2
-        x: 47
-        y: 43
-        width: 27
-        height: 12
+        x: 64
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c12d33435b70ce48b61f767bcb48fe7
-      internalID: 2109844717
+      spriteID: d52c5f1baeba5a840a869de7de120ef4
+      internalID: 1613862854
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_74
+      name: Zombie_18
       rect:
         serializedVersion: 2
-        x: 83
-        y: 43
-        width: 27
-        height: 12
+        x: 96
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 529e8fe3630a70547a59e4d0759f09fc
-      internalID: 679498635
+      spriteID: 5a5a317e60c9ddf4395ef7184e315b01
+      internalID: 910621804
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_76
+      name: Zombie_19
       rect:
         serializedVersion: 2
-        x: 116
-        y: 40
-        width: 6
-        height: 16
+        x: 128
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf16cec6583a5f94589f46efab9c24b5
-      internalID: -825214287
+      spriteID: 6a6ba0c62acd99f4d9a1dc4f9a38c580
+      internalID: 1398780900
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_77
+      name: Zombie_20
       rect:
         serializedVersion: 2
-        x: 136
-        y: 40
-        width: 6
-        height: 16
+        x: 160
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 137ef226477d91c47a9e34f87686a896
-      internalID: 1147114957
+      spriteID: 21dff9a72f1117241ae89d9fa24b28af
+      internalID: 929636719
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_78
+      name: Zombie_21
       rect:
         serializedVersion: 2
-        x: 153
-        y: 40
-        width: 6
-        height: 16
+        x: 192
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60adc41d81769574eba1454532579090
-      internalID: -1941545149
+      spriteID: 0fa40689b1efaae47a4e29df50a74f78
+      internalID: 1743140973
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_79
+      name: Zombie_22
       rect:
         serializedVersion: 2
-        x: 170
-        y: 30
-        width: 4
-        height: 17
+        x: 224
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d382b950789928409efda3389a964e2
-      internalID: -396661515
+      spriteID: 39b60345d76c36f46be020f71b1f9782
+      internalID: 1305094805
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_80
+      name: Zombie_23
       rect:
         serializedVersion: 2
-        x: 176
-        y: 40
-        width: 6
-        height: 16
+        x: 0
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad5fffa3b6b52634f850117ea5d744fc
-      internalID: 768066168
+      spriteID: f53ac3acd1ae24a44a0c97a5a3f1f07c
+      internalID: -1748690928
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_81
+      name: Zombie_24
       rect:
         serializedVersion: 2
-        x: 8
-        y: 25
-        width: 16
-        height: 12
+        x: 32
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e43e4591e14faee48a79a357e52fd2e1
-      internalID: -1697188930
+      spriteID: 633ea84e85e16c14bb483b6e7f4a3e08
+      internalID: -1571526554
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_83
+      name: Zombie_25
       rect:
         serializedVersion: 2
-        x: 24
-        y: 25
-        width: 16
-        height: 12
+        x: 64
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f33c121dbf331042a92930aec8d7a83
-      internalID: 244556993
+      spriteID: f4c1930240ccb024283b3f9aef6d45a5
+      internalID: 172967547
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_85
+      name: Zombie_26
       rect:
         serializedVersion: 2
-        x: 47
-        y: 25
-        width: 27
-        height: 12
+        x: 96
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8af065c4449421e4b81c2f5c594f0850
-      internalID: 1271435518
+      spriteID: 81efefcdc2645e148a28fde8cb705a38
+      internalID: 1985907456
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_86
+      name: Zombie_27
       rect:
         serializedVersion: 2
-        x: 83
-        y: 25
-        width: 27
-        height: 12
+        x: 128
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b36ee6b9dd1da144a0adde5a2aeb5f6
-      internalID: 2031932119
+      spriteID: 5f427cf0cc1dfbe47939dd74be000a21
+      internalID: 658776157
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_88
+      name: Zombie_28
       rect:
         serializedVersion: 2
-        x: 116
-        y: 24
-        width: 6
-        height: 16
+        x: 160
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: abbafbed7546d4b449ec0443d54d43a6
-      internalID: -1351434836
+      spriteID: ed52f0e1ca3de774cbc2569491c3ab92
+      internalID: 793431519
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_89
+      name: Zombie_29
       rect:
         serializedVersion: 2
-        x: 136
-        y: 24
-        width: 6
-        height: 16
+        x: 192
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22e72200ed2155541a2a442bca501b25
-      internalID: -260685795
+      spriteID: 3033cd7a45811a64bb8585642c8c28a4
+      internalID: 1798048446
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_90
+      name: Zombie_30
       rect:
         serializedVersion: 2
-        x: 153
-        y: 24
-        width: 6
-        height: 16
+        x: 224
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef202dcb871e4aa4a92d77225c163c86
-      internalID: -1187443927
+      spriteID: 2cca4b2d0ce172f459d485584819176d
+      internalID: -336121313
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_92
+      name: Zombie_31
       rect:
         serializedVersion: 2
-        x: 176
-        y: 24
-        width: 6
-        height: 16
+        x: 256
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58ca7212988ea4b478232337ff1a9e95
-      internalID: -545879908
+      spriteID: 128393387451eb84e945f829ac22858d
+      internalID: -2020946426
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_93
+      name: Zombie_32
       rect:
         serializedVersion: 2
-        x: 3
-        y: 10
-        width: 6
-        height: 12
+        x: 288
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6823fc549dfbb064dbdea3fd99f2b434
-      internalID: 217186695
+      spriteID: f6a170b24cfba3a469787abdf95513ba
+      internalID: -190487082
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_94
+      name: Zombie_33
       rect:
         serializedVersion: 2
-        x: 19
-        y: 10
-        width: 6
-        height: 12
+        x: 320
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 778dcd271e436984aa1e7b50f6afb563
-      internalID: 1096212807
+      spriteID: 05e076b30d20eea41b8254aa3345f1b3
+      internalID: 1561163790
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_95
+      name: Zombie_34
       rect:
         serializedVersion: 2
-        x: 35
-        y: 10
-        width: 6
-        height: 12
+        x: 352
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba89f0a9a9882f74a93973de7bb99ba9
-      internalID: 259855128
+      spriteID: 89a0eea756b8bd040a28eb265f164fb0
+      internalID: 1202230576
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_96
+      name: Zombie_35
       rect:
         serializedVersion: 2
-        x: 53
-        y: 11
-        width: 22
-        height: 7
+        x: 384
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21b84efebad103f419841146d05b8692
-      internalID: -861209439
+      spriteID: ad836122c234acb45a434be80b35b260
+      internalID: 994708375
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_4
+      name: Zombie_36
       rect:
         serializedVersion: 2
-        x: 190
-        y: 29
-        width: 4
-        height: 17
+        x: 0
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 52a181ae828ec9045878505e4cf9d4b2
-      internalID: -1679057868
+      spriteID: f7998e473ba80f34da0d4e2f1e665233
+      internalID: 1283680104
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_5
+      name: Zombie_37
       rect:
         serializedVersion: 2
-        x: 130
-        y: 31
-        width: 4
-        height: 16
+        x: 32
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1c439eaaa7596b4cb6b1c44069047f2
-      internalID: 588913545
+      spriteID: c5ee5f660971e5a47bb5c6bae3d67acc
+      internalID: 350153153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_38
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e428c7d229345014da61df1900854b23
+      internalID: -687592219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_39
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48d55ac4093dca74d8e587cdb0133ba5
+      internalID: 635824142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_40
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccb558ae4ccfa2448b2d7abe3a583bd8
+      internalID: -1614536285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_41
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c1a520cdc89e894c8dd1f52843fc0be
+      internalID: -1244970284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_42
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88dcd98d7ec3f6844ba0a04c2565fee4
+      internalID: -1530019495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_43
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01d702b6a561f1c4aa5e65c3ba8ab205
+      internalID: -17711069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_44
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9ad90d73db18f7478b2e489000dfacb
+      internalID: 1001484639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 642d5588dfc5781408d1c94cc6a4bd53
+      internalID: 1395419143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_46
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eeba941db1480d449a043d0756efc9a
+      internalID: 808725524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_47
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40094e11599758b478e129cce6a9a37a
+      internalID: -356220596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_48
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e43d387ea742f9c4f939d0f8739f730b
+      internalID: 520745744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_49
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1acd734971f39fc4b9315818da447c90
+      internalID: 984388344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_50
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fa5fe58c718d3546b6a9b4f1e3d25a7
+      internalID: -2052266120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_51
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a32290dcb49694643b3087a910c62cc6
+      internalID: 1691897951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_52
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a20df8a679bdeae4da7adaf829d30495
+      internalID: 277412350
       vertices: []
       indices: 
       edges: []
@@ -1511,104 +1259,59 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      BASE: -1876042514
-      L0_0: 121113153
-      L0_10: -506776875
-      L0_11: 490830551
-      L0_12: 372570531
-      L0_13: -1142930494
-      L0_14: 812976777
-      L0_15: 140755419
-      L0_16: -1327519524
-      L0_17: -1581117026
-      L0_18: -912175957
-      L0_4: -1358744226
-      L0_5: 1499160045
-      L0_6: -1485585154
-      L0_7: -974979767
-      L0_8: 1581728236
-      L0_9: 181200128
-      L2_0: 358996486
-      L2_1: 1276601751
-      L2_2: -1934491888
-      L2_3: -1560632103
-      Tile_12: 415917100
-      Tile_13: 2089376523
-      Tile_14: 1863530708
-      Tile_15: 1982156655
-      Tile_16: 128520455
-      Tile_17: 439506128
-      Tile_22: 816824861
-      Tile_23: 1374613588
-      Tile_24: -1620856796
-      Tile_25: 950661520
-      Tile_26: -901016719
-      Tile_27: -1999959419
-      Tile_32: 284361338
-      Tile_33: 1834736786
-      Tile_34: 1200609094
-      Tile_35: 1139233926
-      Tile_38: 1938796928
-      Tile_39: -642725066
-      Tile_4: -1679057868
-      Tile_40: -89051376
-      Tile_41: -758191109
-      Tile_42: 1806359221
-      Tile_43: 912820443
-      Tile_44: 1158271544
-      Tile_45: -2001382933
-      Tile_47: 1159747881
-      Tile_48: 1861117657
-      Tile_49: 1148532001
-      Tile_5: 588913545
-      Tile_50: 1307738790
-      Tile_51: -480104258
-      Tile_52: 236532231
-      Tile_53: 372469012
-      Tile_55: 333717754
-      Tile_56: 481257553
-      Tile_57: 559838395
-      Tile_58: 2083477685
-      Tile_59: -2006115590
-      Tile_6: -507012990
-      Tile_60: 14784664
-      Tile_61: -1602134436
-      Tile_62: 1163935450
-      Tile_63: 748867986
-      Tile_64: 240084835
-      Tile_65: -555046677
-      Tile_66: -1720484230
-      Tile_67: -1246029139
-      Tile_68: -872390392
-      Tile_69: 622056949
-      Tile_70: -199305739
-      Tile_71: -295299314
-      Tile_72: -1575295619
-      Tile_73: 2109844717
-      Tile_74: 679498635
-      Tile_75: -280709256
-      Tile_76: -825214287
-      Tile_77: 1147114957
-      Tile_78: -1941545149
-      Tile_79: -396661515
-      Tile_80: 768066168
-      Tile_81: -1697188930
-      Tile_82: 1580045775
-      Tile_83: 244556993
-      Tile_84: -644027261
-      Tile_85: 1271435518
-      Tile_86: 2031932119
-      Tile_87: 526776040
-      Tile_88: -1351434836
-      Tile_89: -260685795
-      Tile_90: -1187443927
-      Tile_91: -1490199055
-      Tile_92: -545879908
-      Tile_93: 217186695
-      Tile_94: 1096212807
-      Tile_95: 259855128
-      Tile_96: -861209439
-      Tile_97: 395544741
+      Zombie_0: 1213514995
+      Zombie_1: 1764977586
+      Zombie_10: 1690309600
+      Zombie_11: 985157888
+      Zombie_12: -1703066788
+      Zombie_13: 1036570101
+      Zombie_14: -1498735165
+      Zombie_15: 635350389
+      Zombie_16: -1374168547
+      Zombie_17: 1613862854
+      Zombie_18: 910621804
+      Zombie_19: 1398780900
+      Zombie_2: -1846927086
+      Zombie_20: 929636719
+      Zombie_21: 1743140973
+      Zombie_22: 1305094805
+      Zombie_23: -1748690928
+      Zombie_24: -1571526554
+      Zombie_25: 172967547
+      Zombie_26: 1985907456
+      Zombie_27: 658776157
+      Zombie_28: 793431519
+      Zombie_29: 1798048446
+      Zombie_3: 530439687
+      Zombie_30: -336121313
+      Zombie_31: -2020946426
+      Zombie_32: -190487082
+      Zombie_33: 1561163790
+      Zombie_34: 1202230576
+      Zombie_35: 994708375
+      Zombie_36: 1283680104
+      Zombie_37: 350153153
+      Zombie_38: -687592219
+      Zombie_39: 635824142
+      Zombie_4: 145348292
+      Zombie_40: -1614536285
+      Zombie_41: -1244970284
+      Zombie_42: -1530019495
+      Zombie_43: -17711069
+      Zombie_44: 1001484639
+      Zombie_45: 1395419143
+      Zombie_46: 808725524
+      Zombie_47: -356220596
+      Zombie_48: 520745744
+      Zombie_49: 984388344
+      Zombie_5: 1119482274
+      Zombie_50: -2052266120
+      Zombie_51: 1691897951
+      Zombie_52: 277412350
+      Zombie_6: 589728731
+      Zombie_7: -940915496
+      Zombie_8: -1497783427
+      Zombie_9: 2048418511
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
