@@ -36,11 +36,15 @@ namespace Player.Scripts
                 float power = 10f;
                 PlayerDashEvent?.Invoke(dir, power);
             }
+            if (_pInput.Shop)
+            {
+                Debug.Log(_pInput.Shop);   
+            }
 
 
             if (_debug)
             {
-                if (Input.GetKeyDown(KeyCode.E))
+                if (Input.GetKeyDown(KeyCode.F))
                 {
                     PlayerDeathEvent?.Invoke();
                 }
