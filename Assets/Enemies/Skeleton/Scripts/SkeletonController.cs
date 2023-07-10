@@ -14,16 +14,26 @@ namespace Player.Scripts
         private float _attackCooldown = 0;
         private Transform _player;
 
+        private bool _isDead;
         // Start is called before the first frame update
         void Start()
         {
             _stats = GetComponent<SkeletonEnemy>();
             _player = GameObject.FindGameObjectWithTag("Player").transform;
+            
+            _stats.DeathEvent += StatsOnDeathEvent;
+        }
+
+        private void StatsOnDeathEvent()
+        {
+            _isDead = true;
         }
 
         void Update()
         {
-            var playerPos = _player.position;
+            if (_isDead) return;
+
+                var playerPos = _player.position;
             
             _attackCooldown -= Time.deltaTime;
             if (!InRange(playerPos))
@@ -43,9 +53,8 @@ namespace Player.Scripts
         {
             float attackRange = _stats.EnemyStats.AttackRange;
             var position = transform.position;
-            var position1 = _player.position;
-            return Mathf.Abs(position.x - position1.x) <= attackRange &&
-                   Mathf.Abs(position.y - position1.y) <= attackRange;
+            return Mathf.Abs(position.x - pos.x) <= attackRange &&
+                   Mathf.Abs(position.y - pos.y) <= attackRange;
         }
     }
 }

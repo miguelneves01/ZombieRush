@@ -21,8 +21,10 @@ namespace Player.Scripts
         void Start()
         {
             _lastHealTime = 1f;
+            
             PlayerStats.Health = PlayerStats.InitialHealth;
             PlayerStats.MaxHealth = PlayerStats.InitialHealth;
+            HealthUpdateEvent?.Invoke( PlayerStats.Health, PlayerStats.MaxHealth);
 
             PlayerController.PlayerAttackEvent += Attack;
         }
@@ -44,14 +46,13 @@ namespace Player.Scripts
         
         public void Attack()
         {
+            PlayerAttackEvent?.Invoke();
             Collider2D[] hits = Physics2D.OverlapCircleAll(_attackPos.position, PlayerStats.AttackRange,_enemyLayer);
 
             foreach (var hit in hits)
             {
                 hit.GetComponent<IDamage>()?.TakeDamage(PlayerStats.AttackDamage);
             }
-            
-            PlayerAttackEvent?.Invoke();
         }
 
         void Update()

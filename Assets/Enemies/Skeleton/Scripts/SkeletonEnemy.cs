@@ -45,14 +45,13 @@ namespace Enemies.Skeleton.Scripts
         
         public void Attack()
         {
+            AttackEvent?.Invoke();
             Collider2D[] hits = Physics2D.OverlapCircleAll(_attackPos.position, EnemyStats.AttackRange,_enemyLayer);
             
             foreach (var hit in hits)
             {
                 hit.GetComponent<IDamage>()?.TakeDamage(EnemyStats.AttackDamage);
             }
-            
-            AttackEvent?.Invoke();
         }
     }
 }
