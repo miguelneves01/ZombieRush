@@ -26,6 +26,7 @@ namespace Player.Scripts
         {
             if (other.TryGetComponent<Tilemap>(out var tilemap))
             {
+                Debug.Log("HERE");
                 _canShop = true;
             }
         }
