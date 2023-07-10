@@ -12,13 +12,14 @@ namespace Player.Scripts
         public bool Shop { get; private set; }
         
         private bool _canShop;
-        
+        [SerializeField] private bool _hasDash;
 
         void Update()
         {
+
             Dir = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
             Attack = Input.GetKeyDown(KeyCode.Mouse0);
-            Dash = Input.GetKeyDown(KeyCode.Space);
+            Dash = _hasDash && Input.GetKeyDown(KeyCode.Space);
             Shop = _canShop && Input.GetKeyDown(KeyCode.E);
         }
 

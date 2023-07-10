@@ -32,17 +32,7 @@ public class PerlinNoiseMap : MonoBehaviour
         InitBaseTilemap();
 
         InitLayer(0,100, _magnification);
-        InitLayer(2,_spawnChance, 10f);
-    }
-
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-            _xOffset = Random.Range(-1000,1000);
-            _yOffset = Random.Range(-1000,1000);
-            InitLayer(0, 100, _magnification);
-        }
+        //InitLayer(2,_spawnChance, 10f);
     }
 
     private void InitTiles()
