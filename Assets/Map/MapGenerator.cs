@@ -16,7 +16,7 @@ public class PerlinNoiseMap : MonoBehaviour
     [SerializeField] private int _height = 100;
     
     [SerializeField] private float _magnification = 7f;
-    [SerializeField] private int _spawnChance = 100;
+    [SerializeField] private int _spawnChance = 3;
     [SerializeField] private int _xOffset = 0;
     [SerializeField] private int _yOffset = 0;
 
@@ -32,7 +32,7 @@ public class PerlinNoiseMap : MonoBehaviour
         InitBaseTilemap();
 
         InitLayer(0,100, _magnification);
-        //InitLayer(2,_spawnChance, 10f);
+        InitLayer(2,_spawnChance, 10f);
     }
 
     private void InitTiles()
@@ -86,11 +86,11 @@ public class PerlinNoiseMap : MonoBehaviour
 
     private TileBase GetTileFromNoise(int x, int y, int layer, int spawnChance, float magnitude)
     {
-        // float spawn = Random.Range(0f, 100f);
-        // if (spawn < spawnChance)
-        // {
-        //     return null;
-        // }
+        float spawn = Random.Range(0f, 100f);
+        if (spawn > spawnChance)
+        {
+            return null;
+        }
         
         float perlin = Mathf.Clamp01(Mathf.PerlinNoise(
             (x - _xOffset) / magnitude, 

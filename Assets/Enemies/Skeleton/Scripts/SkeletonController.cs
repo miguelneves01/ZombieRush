@@ -38,8 +38,8 @@ namespace Player.Scripts
             _attackCooldown -= Time.deltaTime;
             if (!InRange(playerPos))
             {
-                float speed = _stats.EnemyStats.Speed;
-                WalkingEvent?.Invoke(playerPos, speed);
+                
+                WalkingEvent?.Invoke(playerPos, _stats.EnemyStats.Speed);
             }
             else if(_attackCooldown <= 0)
             {

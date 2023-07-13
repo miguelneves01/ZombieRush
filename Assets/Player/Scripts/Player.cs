@@ -11,12 +11,8 @@ namespace Player.Scripts
         public static event Action<float, float> HealthUpdateEvent;
         public static event Action PlayerDeathEvent; 
         public static event Action<float> PlayerHurtEvent;
-        public static event Action PlayerAttackEvent;
-        
+
         private float _lastHealTime;
-        
-        [SerializeField] private Transform _attackPos;
-        [SerializeField] private LayerMask _enemyLayer;
 
         void Start()
         {
@@ -25,34 +21,25 @@ namespace Player.Scripts
             PlayerStats.Health = PlayerStats.InitialHealth;
             PlayerStats.MaxHealth = PlayerStats.InitialHealth;
             HealthUpdateEvent?.Invoke( PlayerStats.Health, PlayerStats.MaxHealth);
-
-            PlayerController.PlayerAttackEvent += Attack;
         }
 
         public void TakeDamage(float damage)
         {
-            PlayerStats.Health = Mathf.Clamp(PlayerStats.Health - damage, 0f, PlayerStats.MaxHealth);
-            HealthUpdateEvent?.Invoke( PlayerStats.Health, PlayerStats.MaxHealth);
             if (damage > 0)
             {
                 PlayerHurtEvent?.Invoke(damage);
             }
+            PlayerStats.Health = Mathf.Clamp(PlayerStats.Health - damage, 0f, PlayerStats.MaxHealth);
+            HealthUpdateEvent?.Invoke( PlayerStats.Health, PlayerStats.MaxHealth);
+        }
+
+        public void SetHp(float hp)
+        {
         }
 
         public void Heal(float damage)
         {
             TakeDamage(-damage);
-        }
-        
-        public void Attack()
-        {
-            PlayerAttackEvent?.Invoke();
-            Collider2D[] hits = Physics2D.OverlapCircleAll(_attackPos.position, PlayerStats.AttackRange,_enemyLayer);
-
-            foreach (var hit in hits)
-            {
-                hit.GetComponent<IDamage>()?.TakeDamage(PlayerStats.AttackDamage);
-            }
         }
 
         void Update()

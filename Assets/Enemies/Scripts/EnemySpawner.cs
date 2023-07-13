@@ -6,19 +6,23 @@ public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] private float _spawnRate;
     [SerializeField] private int _spawnAmount;
+    [SerializeField] private int _spawnAmountMax = 200;
     [SerializeField] private Vector2 _xSpawnRange;
     [SerializeField] private Vector2 _ySpawnRange;
     [SerializeField] private Vector2 _minSpawnRange;
     [SerializeField] private List<GameObject> _enemies;
 
     private float _curTime;
+    private float _totalTime;
 
     // Update is called once per frame
     void Update()
     {
+        _totalTime += Time.deltaTime;
         _curTime += Time.deltaTime;
-        if (_curTime < _spawnRate)return;
-        
+        if (_curTime < _spawnRate 
+            || GameObject.FindGameObjectsWithTag("Enemy").Length > _spawnAmountMax) return;
+
         for (int i = 0; i < _spawnAmount; i++)
         {
             var enemy = _enemies[Random.Range(0,_enemies.Count)];
@@ -41,6 +45,8 @@ public class EnemySpawner : MonoBehaviour
 
             _curTime = 0;
         }
-        
+
+        _spawnAmount = 1 + Mathf.FloorToInt(_totalTime / 60);
+        _spawnRate = Mathf.Clamp(_spawnRate - Mathf.FloorToInt(_totalTime / 180), 1, 4);
     }
 }

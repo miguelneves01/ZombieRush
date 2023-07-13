@@ -28,7 +28,7 @@ namespace Player.Scripts
             PlayerController.PlayerWalkingEvent += Walk;
             Player.PlayerDeathEvent += Die;
             Player.PlayerHurtEvent += Hurt;
-            Player.PlayerAttackEvent += Attack;
+            PlayerController.PlayerAttackEvent += Attack;
             PlayerController.PlayerDashEvent += Dash;
         }
 

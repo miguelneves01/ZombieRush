@@ -13,45 +13,27 @@ namespace Enemies.Skeleton.Scripts
         
         public event Action DeathEvent; 
         public event Action<float> HurtEvent;
-        public event Action AttackEvent;
-        
-        [SerializeField] private Transform _attackPos;
-        [SerializeField] private LayerMask _enemyLayer;
 
         void Awake()
         {
             _health = EnemyStats.Health;
-            GetComponent<SkeletonController>().AttackEvent += Attack;
         }
 
         public void TakeDamage(float damage)
         {
             HurtEvent?.Invoke(damage);
             _health -= damage;
+            if (_health <= 0) Die();
         }
 
-        void Update()
+        public void SetHp(float hp)
         {
-            if (_health <= 0)
-            {
-                Die();
-            }
+            _health = hp;
         }
 
         private void Die()
         {
             DeathEvent?.Invoke();
-        }
-        
-        public void Attack()
-        {
-            AttackEvent?.Invoke();
-            Collider2D[] hits = Physics2D.OverlapCircleAll(_attackPos.position, EnemyStats.AttackRange,_enemyLayer);
-            
-            foreach (var hit in hits)
-            {
-                hit.GetComponent<IDamage>()?.TakeDamage(EnemyStats.AttackDamage);
-            }
         }
     }
 }

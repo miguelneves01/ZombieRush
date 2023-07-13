@@ -10,7 +10,6 @@ namespace Player.Scripts
         [field: SerializeField] public float Health { get; set; }
         [field: SerializeField] public float HealthRegen { get; set; }
         [field: SerializeField] public float AttackDamage { get; set; }
-        [field: SerializeField] public float AttackRange { get; set; }
         [field: SerializeField] public float AttackSpeed { get; set; }
         [field: SerializeField] public float DashCooldown { get; set; }
         [field: SerializeField] public float DashPower { get; set; }

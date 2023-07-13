@@ -33,7 +33,7 @@ namespace Enemies.Skeleton.Scripts
             _skeletonController.WalkingEvent += Walk;
             _skeleton.DeathEvent += Die;
             _skeleton.HurtEvent += Hurt;
-            _skeleton.AttackEvent += Attack;
+            _skeletonController.AttackEvent += Attack;
         }
 
         private void Walk(Vector2 dir, float speed)

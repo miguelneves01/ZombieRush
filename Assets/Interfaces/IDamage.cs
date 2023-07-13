@@ -7,5 +7,6 @@ namespace Interfaces
     public interface IDamage
     {
         public void TakeDamage(float damage);
+        public void SetHp(float hp);
     }
 }

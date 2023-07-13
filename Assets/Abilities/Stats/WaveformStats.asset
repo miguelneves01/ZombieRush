@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91dc31aecf72e6147875b86f3cccbb6d, type: 3}
+  m_Name: WaveformStats
+  m_EditorClassIdentifier: 
+  <AbilityPrefab>k__BackingField: {fileID: 3031719117468023449, guid: fed0fbf953b7f084b9ec1de366d6dd5f, type: 3}
+  <AbilityCooldown>k__BackingField: 20
+  <AbilityDamage>k__BackingField: 90
+  <Time2Live>k__BackingField: 4
+  <Speed>k__BackingField: 5
