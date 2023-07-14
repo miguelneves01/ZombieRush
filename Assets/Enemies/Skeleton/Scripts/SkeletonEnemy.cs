@@ -21,19 +21,20 @@ namespace Enemies.Skeleton.Scripts
 
         public void TakeDamage(float damage)
         {
-            HurtEvent?.Invoke(damage);
             _health -= damage;
-            if (_health <= 0) Die();
+            if (_health > 0)
+            {
+                HurtEvent?.Invoke(damage);
+            }
+            else
+            {
+                DeathEvent?.Invoke();
+            }
         }
 
         public void SetHp(float hp)
         {
             _health = hp;
-        }
-
-        private void Die()
-        {
-            DeathEvent?.Invoke();
         }
     }
 }
