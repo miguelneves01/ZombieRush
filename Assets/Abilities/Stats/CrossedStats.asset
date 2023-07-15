@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: CrossedStats
   m_EditorClassIdentifier: 
   <AbilityPrefab>k__BackingField: {fileID: 3031719117468023449, guid: 028c623c65cb6fa4ab8c7f4bb2373299, type: 3}
-  <AbilityCooldown>k__BackingField: 3
-  <AbilityDamage>k__BackingField: 50
-  <Time2Live>k__BackingField: 2
-  <Speed>k__BackingField: 10
+  <AbilityCooldown>k__BackingField: 5
+  <AbilityDamage>k__BackingField: 40
+  <Time2Live>k__BackingField: 1
+  <Speed>k__BackingField: 15

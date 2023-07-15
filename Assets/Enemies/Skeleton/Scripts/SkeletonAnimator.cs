@@ -10,8 +10,11 @@ namespace Enemies.Skeleton.Scripts
     {
 
         private Animator _animator;
-        private SpriteRenderer _spriteRender;
+        private AudioSource _audioSource;
         private SkeletonController _skeletonController;
+        [SerializeField] private AudioClip[] _audioClips;
+        [SerializeField] private Transform _floatingTextPos;
+
         
         private static readonly int Death = Animator.StringToHash("Death");
         private static readonly int Walking = Animator.StringToHash("Walk");
@@ -23,7 +26,7 @@ namespace Enemies.Skeleton.Scripts
         void Awake()
         {
             _animator = GetComponent<Animator>();
-            _spriteRender = GetComponent<SpriteRenderer>();
+            _audioSource = GetComponent<AudioSource>();
             _skeletonController = GetComponent<SkeletonController>();
             _skeleton = GetComponent<SkeletonEnemy>();
         }
@@ -39,20 +42,24 @@ namespace Enemies.Skeleton.Scripts
         private void Walk(Vector2 dir, float speed)
         {
             var position = transform.position;
+            //_audioSource.PlayOneShot(_audioClips[0]);
             _animator.SetBool(Walking, !dir.Equals(position));
             FlipHorizontally(dir.x - position.x);
         }
         
         private void Die()
         {
+            _audioSource.PlayOneShot(_audioClips[1]);
             _animator.SetBool(Death, true);
         }
         private void Hurt(float damage)
         {
+            _audioSource.PlayOneShot(_audioClips[2]);
             _animator.SetTrigger(GetHit);
         }
         private void Attack()
         {
+            _audioSource.PlayOneShot(_audioClips[3]);
             _animator.SetTrigger(Attacking);
         }
 
@@ -63,6 +70,7 @@ namespace Enemies.Skeleton.Scripts
             var transform1 = transform;
             var scale = transform1.localScale;
             scale.x = flipDir > 0 ? 1 : -1;
+            _floatingTextPos.localScale = scale;
             transform1.localScale = scale;
         }
     }

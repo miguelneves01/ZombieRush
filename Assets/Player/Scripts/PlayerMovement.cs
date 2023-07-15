@@ -14,12 +14,15 @@ namespace Player.Scripts
         void Awake()
         {
             _rb = GetComponent<Rigidbody2D>();
+            
+            
         }
 
         private void Start()
         {
-            PlayerController.PlayerWalkingEvent += Move;
-            PlayerController.PlayerDashEvent += Dash;
+            var pc = GetComponent<PlayerController>();
+            pc.PlayerWalkingEvent += Move;
+            pc.PlayerDashEvent += Dash;
         }
 
         private void Dash(Vector2 dir, float power)

@@ -17,8 +17,8 @@ public class HealthBar : MonoBehaviour
         _slider.maxValue = _player.PlayerStats.MaxHealth;
         _slider.minValue = 0f;
         _slider.value = _player.PlayerStats.Health;
-
-        Player.Scripts.Player.HealthUpdateEvent += UpdateUI;
+        
+        _player.HealthUpdateEvent += UpdateUI;
     }
 
     // Update is called once per frame

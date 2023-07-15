@@ -14,7 +14,9 @@ public class PlayerAttackPos : MonoBehaviour
     void Start()
     {
         _player = GetComponentInParent<Player.Scripts.Player>();
-        PlayerController.PlayerAttackEvent += PlayerControllerOnPlayerAttackEvent;
+
+        var pc = GetComponentInParent<PlayerController>();
+        pc.PlayerAttackEvent += PlayerControllerOnPlayerAttackEvent;
     }
 
     private void PlayerControllerOnPlayerAttackEvent()

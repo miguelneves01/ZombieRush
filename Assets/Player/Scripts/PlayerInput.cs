@@ -26,7 +26,7 @@ namespace Player.Scripts
         void Update()
         {
             Dir = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
-            Attack = Input.GetKeyDown(KeyCode.Mouse0);
+            Attack = Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.Alpha4);
             Dash = _hasDash && Input.GetKeyDown(KeyCode.Space);
             Shop = _canShop && Input.GetKeyDown(KeyCode.E);
             for (int i = 0; i < Abilities.Length; i++)

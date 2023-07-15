@@ -14,6 +14,13 @@ namespace Abilities.Waveform.Scripts
         private Transform _player;
         private float _dir;
         private float _speed;
+        [SerializeField] private AudioClip[] _audioClips;
+        private AudioSource _audioSource;
+        
+        void Start()
+        {
+            _audioSource.PlayOneShot(_audioClips[0]);
+        }
 
         void Awake()
         {
@@ -21,6 +28,7 @@ namespace Abilities.Waveform.Scripts
             _dir = _player.localScale.x;
             FlipHorizontally();
             _speed = AbilityStats.Speed;
+            _audioSource = GetComponent<AudioSource>();
         }
 
         void Update()
@@ -41,20 +49,26 @@ namespace Abilities.Waveform.Scripts
 
         private void OnCollisionEnter2D(Collision2D other)
         {
-            var collider = GetComponent<CircleCollider2D>();
-            collider.isTrigger = true;
-            collider.radius = 5f;
-            _speed = 0;
-            GetComponent<Animator>().runtimeAnimatorController = _explosionAnimator;
-            StartCoroutine(SelfDestruct());
+            if (!other.gameObject.CompareTag("Player"))
+            {
+                other.gameObject.TryGetComponent<IDamage>(out var enemy);
+                enemy?.TakeDamage(AbilityStats.AbilityDamage * 2);
+                var collider = GetComponent<CircleCollider2D>();
+                collider.isTrigger = true;
+                collider.radius = 5f;
+                _speed = 0;
+                _audioSource.PlayOneShot(_audioClips[1]);
+                GetComponent<Animator>().runtimeAnimatorController = _explosionAnimator;
+                StartCoroutine(SelfDestruct());
+            }
         }
 
-        private void OnTriggerStay2D(Collider2D other)
+        private void OnTriggerEnter2D(Collider2D other)
         {
             if (other.gameObject.CompareTag("Enemy"))
             {
                 other.gameObject.TryGetComponent<IDamage>(out var enemy);
-                enemy?.TakeDamage(AbilityStats.AbilityDamage);
+                enemy?.TakeDamage(AbilityStats.AbilityDamage * 2);
             }
         }
 

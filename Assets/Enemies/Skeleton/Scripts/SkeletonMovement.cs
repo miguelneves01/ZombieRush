@@ -9,6 +9,7 @@ namespace Player.Scripts
     {
         private Rigidbody2D _rb;
 
+
         void Awake()
         {
             _rb = GetComponent<Rigidbody2D>();

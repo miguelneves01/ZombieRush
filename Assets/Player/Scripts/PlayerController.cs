@@ -9,12 +9,14 @@ namespace Player.Scripts
 {
     public class PlayerController : MonoBehaviour
     {
+        
+        [SerializeField] private PlayerScore _playerScore;
+
         private PlayerInput _pInput;
         private Player _pStats;
-        public static event Action<Vector2, float> PlayerWalkingEvent;
-        public static event Action PlayerAttackEvent;
-        public static event Action<Vector2, float> PlayerDashEvent;
-        public static event Action PlayerLoadShopEvent;
+        public event Action<Vector2, float> PlayerWalkingEvent;
+        public event Action PlayerAttackEvent;
+        public event Action<Vector2, float> PlayerDashEvent;
 
         private AbilitySpawner[] _abilities;
         public float[] AbilitiesCooldown;
@@ -23,20 +25,28 @@ namespace Player.Scripts
 
         private bool _isDead;
 
-        // Start is called before the first frame update
-        void Start()
+        void Awake()
         {
+            _playerScore.CurrentScore = 0;
             _pInput = GetComponent<PlayerInput>();
             _pStats = GetComponent<Player>();
             _abilities = GetComponents<AbilitySpawner>();
             AbilitiesCooldown = new float[_abilities.Length + 1];
-            
-            Player.PlayerDeathEvent += PlayerOnPlayerDeathEvent;
+        }
+
+        // Start is called before the first frame update
+        void Start()
+        {
+            _pStats.PlayerDeathEvent += PlayerOnPlayerDeathEvent;
         }
 
         private void PlayerOnPlayerDeathEvent()
         {
             _isDead = true;
+            if (_playerScore.CurrentScore > _playerScore.HighScore)
+            {
+                _playerScore.HighScore = _playerScore.CurrentScore;
+            }
         }
 
         void Update()
@@ -74,11 +84,6 @@ namespace Player.Scripts
                 float power = _pStats.PlayerStats.DashPower;
                 PlayerDashEvent?.Invoke(dir, power);
                 AbilitiesCooldown[^1] = _pStats.PlayerStats.DashCooldown;
-            }
-            
-            if (_pInput.Shop)
-            {
-                PlayerLoadShopEvent?.Invoke();
             }
         }
         

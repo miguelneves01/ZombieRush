@@ -1,4 +1,5 @@
-﻿using Abilities.Scripts;
+﻿using System;
+using Abilities.Scripts;
 using Interfaces;
 using UnityEngine;
 
@@ -6,7 +7,9 @@ namespace Abilities.Spark.Scripts
 {
     public class SparkAbility : MonoBehaviour, IAbility
     {
-        [field: SerializeField] public AbilitySO AbilityStats { get; set; } 
+        [field: SerializeField] public AbilitySO AbilityStats { get; set; }
+        [SerializeField] private AudioClip[] _audioClips;
+        private AudioSource _audioSource;
         private float _aliveTime;
         private Transform _player;
         private float _dir;
@@ -15,8 +18,14 @@ namespace Abilities.Spark.Scripts
         void Awake()
         {
             _player = GameObject.FindGameObjectWithTag("Player").transform;
+            _audioSource = GetComponent<AudioSource>();
             _dir = _player.localScale.x;
             FlipHorizontally(); 
+        }
+
+        void Start()
+        {
+            _audioSource.PlayOneShot(_audioClips[0]);
         }
 
         void Update()

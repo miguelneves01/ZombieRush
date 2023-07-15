@@ -16,7 +16,7 @@ namespace UI.Scripts
         private AbilitySpawner[] _abilities;
         private PlayerController _pController;
 
-        private void Awake()
+        private void Start()
         {
             GameObject player = GameObject.FindGameObjectWithTag("Player");
             _pStats = player.GetComponent<Player.Scripts.Player>();

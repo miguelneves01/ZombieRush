@@ -13,6 +13,9 @@ namespace Player.Scripts
         
         private float _attackCooldown = 0;
         private Transform _player;
+        
+        private float _tooFarDespawnTime = 10f;
+        private float _aliveTime;
 
         private bool _isDead;
         // Start is called before the first frame update
@@ -31,9 +34,9 @@ namespace Player.Scripts
 
         void Update()
         {
+            _aliveTime += Time.deltaTime;
             if (_isDead) return;
-
-                var playerPos = _player.position;
+            var playerPos = _player.position;
             
             _attackCooldown -= Time.deltaTime;
             if (!InRange(playerPos))
@@ -45,6 +48,11 @@ namespace Player.Scripts
             {
                 AttackEvent?.Invoke();
                 _attackCooldown = 1/_stats.EnemyStats.AttackSpeed;
+            }
+
+            if (_aliveTime >= _tooFarDespawnTime && Vector2.Distance(transform.position, playerPos) > 30) 
+            {
+                Destroy(gameObject);
             }
         }
         

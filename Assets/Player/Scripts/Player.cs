@@ -1,6 +1,8 @@
 ﻿using System;
 using Interfaces;
+using TMPro;
 using UnityEngine;
+using Object = UnityEngine.Object;
 
 namespace Player.Scripts
 {
@@ -8,11 +10,13 @@ namespace Player.Scripts
     {
         [field: SerializeField] public PlayerStatsSO PlayerStats { get; set; }
         
-        public static event Action<float, float> HealthUpdateEvent;
-        public static event Action PlayerDeathEvent; 
-        public static event Action<float> PlayerHurtEvent;
+        public event Action<float, float> HealthUpdateEvent;
+        public event Action PlayerDeathEvent; 
+        public event Action<float> PlayerHurtEvent;
 
         private float _lastHealTime;
+        [SerializeField] private GameObject _floatingText;
+        [SerializeField] private Transform _floatingTextPos;
 
         void Start()
         {
@@ -25,12 +29,19 @@ namespace Player.Scripts
 
         public void TakeDamage(float damage)
         {
+            var popup = Instantiate(_floatingText, _floatingTextPos);
+            var popupText = popup.GetComponent<TMP_Text>();
+            popupText.text = Mathf.FloorToInt(Mathf.Abs(damage)).ToString();
+            popupText.color = Color.green;
             if (damage > 0)
             {
                 PlayerHurtEvent?.Invoke(damage);
+                popupText.color = Color.red;
             }
             PlayerStats.Health = Mathf.Clamp(PlayerStats.Health - damage, 0f, PlayerStats.MaxHealth);
             HealthUpdateEvent?.Invoke( PlayerStats.Health, PlayerStats.MaxHealth);
+
+            
         }
 
         public void SetHp(float hp)
